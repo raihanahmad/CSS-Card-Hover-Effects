@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #C23519;
+}
+
+.box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.box-container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(235, 228, 228, 0.2),
+              inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+              5px 5px 5px rgba(0, 0, 0, 0.3),
+              -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  margin: 30px;
+}
+
+.box-container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #CE2701;
+  border: 2px solid #b00;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .7s;
+  cursor: pointer;
+}
+
+.box-container .card .box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px 0 0 20px;
+}
+
+.box-container .card .box:hover {
+  transform: translateY(-100px);
+}
+
+.box-container .card .box .box-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.box-container .card .box .box-content h1 {
+  position: absolute;
+  top: -88px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.384);
+}
+
+.box-container .card .box .box-content h3 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.box-container .card .box .box-content p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.box-container .card .box .box-content a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: .75rem 1rem;
+  margin-top: 3rem;
+  border-radius: 5px;
+}
