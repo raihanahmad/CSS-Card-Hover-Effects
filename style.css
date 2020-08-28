@@ -15,7 +15,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   min-height: 100vh;
-  background: #C23519;
+  background: #c23519;
 }
 
 .box-container {
@@ -32,9 +32,8 @@ a {
   min-width: 320px;
   height: 440px;
   box-shadow: inset 5px 5px 5px rgba(235, 228, 228, 0.2),
-              inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-              5px 5px 5px rgba(0, 0, 0, 0.3),
-              -5px -5px 15px rgba(255, 255, 255, 0.1);
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
   border-radius: 25px;
   margin: 30px;
 }
@@ -45,14 +44,14 @@ a {
   left: 20px;
   right: 20px;
   bottom: 20px;
-  background: #CE2701;
+  background: #ce2701;
   border: 2px solid #b00;
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .7s;
+  transition: 0.7s;
   cursor: pointer;
 }
 
@@ -67,7 +66,7 @@ a {
   border-radius: 20px 0 0 20px;
 }
 
-.box-container .card .box:hover {
+.box-container .card:hover .box {
   transform: translateY(-100px);
 }
 
@@ -99,7 +98,7 @@ a {
 .box-container .card .box .box-content a {
   color: #fff;
   border: 1px solid #fff;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   margin-top: 3rem;
   border-radius: 5px;
 }
